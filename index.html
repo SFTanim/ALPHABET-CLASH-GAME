@@ -28,14 +28,14 @@
                 <!-- Screen -->
                 <div
                     class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
-                    <div class="h-fit w-fit mx-auto rounded-b-lg bg-[#010313CC]"> 
-                        <p class="px-6 pb-4">Don't watch keyboard  while playing...</p>
+                    <div class="h-fit w-fit mx-auto rounded-b-lg bg-[#010313CC]">
+                        <p class="px-6 pb-4">Don't watch keyboard while playing...</p>
                     </div>
 
                     <div class="h-2/3 my-auto mx-auto flex items-center w-fit">
                         <p id="display-letter" class="text-9xl text-black  font- uppercase">Y</p>
                     </div>
-                    
+
                 </div>
 
 
@@ -81,12 +81,12 @@
                     <button class="btn text-white btn bg-[#894189] rounded-3xl border-none px-6">
                         Life
                         <img src="images/heart.svg" alt="">
-                        <span>1</span>
+                        <span id="life-number">5</span>
                     </button>
                     <button class="btn text-white btn bg-[#360490] rounded-3xl border-none px-6">
                         Score
                         <img src="images/doller.svg" alt="">
-                        <span>1</span>
+                        <span id="score-number">0</span>
                     </button>
                 </div>
             </div>
@@ -97,9 +97,10 @@
             <div class="flex flex-col border-2 gap-y-4 p-10 rounded-2xl bg-gradient-to-l from-[#FFFFFF33] to-blue-500">
                 <h1 class="text-8xl">
                     <span class="font-extrabold">Score : </span>
-                    <span class="">14</span>
+                    <span id="last-result">14</span>
                 </h1>
-                <button class=" bg-white text-black text-2xl mx-auto font-semibold py-3 px-6 rounded-2xl" id="">Play Again</button>
+                <button onclick="playNow()" class=" bg-white text-black text-2xl mx-auto font-semibold py-3 px-6 rounded-2xl" id="">Play
+                    Again</button>
                 <p class="mx-auto text-xl font-medium">Practice will make you Pro</p>
             </div>
         </section>
