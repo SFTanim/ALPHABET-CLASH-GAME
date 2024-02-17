@@ -6,22 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALPHABET CLASH GAME</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <main class="font-poppins bg-black border-2 border-black m-10">
-        <section id="first-sec" class="">
-            <div>
-                <h1 class="text-8xl">ALPHABET CLASH</h1>
-                <p class="text-2xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button class="" id="">Play Now</button>
+<body class="font-poppins">
+    <main class="min-h-screen bg-[#1E1E1E]  text-white bg-[url(images/background.png)] bg-no-repeat bg-center">
+
+        <!-- Home Screen -->
+        <section id="first-sec" class=" h-screen flex items-center justify-center">
+            <div class="gap-y-4 flex flex-col items-center text-2xl font-medium">
+                <h1 class="text-9xl font-anton font-medium uppercase">ALPHABET CLASH</h1>
+                <p class="">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                <button class="btn w-fit mx-auto font-semibold" id="">Play Now</button>
             </div>
         </section>
-        <section id="middle-sec" class="">
 
+        <!-- Gaming Screen -->
+        <section id="middle-sec" class="hidden flex flex-col justify-center min-h-screen w-fit mx-auto">
+            <div class="flex flex-col items-center gap-y-10">
+                <!-- Screen -->
+                <div
+                    class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
+                    <div class="h-fit w-fit mx-auto rounded-b-lg bg-[#010313CC]"> 
+                        <p class="px-6 pb-4">Don't watch keyboard  while playing...</p>
+                    </div>
+
+                    <div class="h-2/3 my-auto mx-auto flex items-center w-fit">
+                        <p class="text-9xl text-black  font-semibold">Y</p>
+                    </div>
+                    
+                </div>
+
+
+                <!-- Keyboard-kbd -->
+                <div class="text-black" id="keyboard">
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">q</kbd>
+                        <kbd class="kbd">w</kbd>
+                        <kbd class="kbd">e</kbd>
+                        <kbd class="kbd">r</kbd>
+                        <kbd class="kbd">t</kbd>
+                        <kbd class="kbd">y</kbd>
+                        <kbd class="kbd">u</kbd>
+                        <kbd class="kbd">i</kbd>
+                        <kbd class="kbd">o</kbd>
+                        <kbd class="kbd">p</kbd>
+                    </div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">a</kbd>
+                        <kbd class="kbd">s</kbd>
+                        <kbd class="kbd">d</kbd>
+                        <kbd class="kbd">f</kbd>
+                        <kbd class="kbd">g</kbd>
+                        <kbd class="kbd">h</kbd>
+                        <kbd class="kbd">j</kbd>
+                        <kbd class="kbd">k</kbd>
+                        <kbd class="kbd">l</kbd>
+                    </div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">z</kbd>
+                        <kbd class="kbd">x</kbd>
+                        <kbd class="kbd">c</kbd>
+                        <kbd class="kbd">v</kbd>
+                        <kbd class="kbd">b</kbd>
+                        <kbd class="kbd">n</kbd>
+                        <kbd class="kbd">m</kbd>
+                        <kbd class="kbd">/</kbd>
+                    </div>
+                </div>
+
+                <!-- life score -->
+                <div class="flex justify-between w-full" id="life-score">
+                    <button class="btn text-white btn bg-[#894189] rounded-3xl border-none px-6">
+                        Life
+                        <img src="images/heart.svg" alt="">
+                        <span>1</span>
+                    </button>
+                    <button class="btn text-white btn bg-[#360490] rounded-3xl border-none px-6">
+                        Score
+                        <img src="images/doller.svg" alt="">
+                        <span>1</span>
+                    </button>
+                </div>
+            </div>
         </section>
-        <section id="last-sec" class="">
 
+        <!-- Result Screen -->
+        <section id="last-sec" class="hidden flex justify-center items-center min-h-screen">
+            <div class="flex flex-col border-2 gap-y-4 p-10 rounded-2xl bg-gradient-to-l from-[#FFFFFF33] to-blue-500">
+                <h1 class="text-8xl">
+                    <span class="font-extrabold">Score : </span>
+                    <span class="">14</span>
+                </h1>
+                <button class=" bg-white text-black text-2xl mx-auto font-semibold py-3 px-6 rounded-2xl" id="">Play Again</button>
+                <p class="mx-auto text-xl font-medium">Practice will make you Pro</p>
+            </div>
         </section>
     </main>
 
